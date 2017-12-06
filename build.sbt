@@ -9,7 +9,7 @@ lazy val root = (project in file(".")).
     )),
     name := "Hello",
     libraryDependencies ++= Seq(
-      scalaTest % Test,
-      "com.typesafe.akka" %% "akka-http" % "10.0.11"
+      akkaHttp,
+      scalaTest % Test
     )
   )
